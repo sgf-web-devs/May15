@@ -1,0 +1,39 @@
+/* Troubleshooting CSS */
+
+/* [1:6] SUMMON - Come to ICU 2015 button */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.1/summon.css');
+
+ 
+ 
+/* [2:6] STALE - semantic.min.css */
+/* {{Demo: 200 vs 304}} */
+
+
+
+/* [3:6] SELECTOR - Separator heart icon */
+h1 .heart {
+  color: red;
+}
+
+
+
+/* [4:6] SPECIFICITY - An Old Cat Can Learn New Tricks */
+h1 { 
+  color: lime;
+}
+
+
+
+/* [5:6] SUPPORT - Research button */
+.page .grid .column:nth-child(2) .button {  
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  -moz-box-shadow: 0 1px 20px 5px rgba(255,255,0,0.75);
+}
+
+
+
+/* [6:6] SATISFY - How to win in a fight with a cat */
+.ui.list .list>.item [class*="right floated"], 
+.ui.list>.item [class*="right floated"] {
+  display: block;
+}
